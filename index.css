@@ -82,8 +82,7 @@ nav a:hover {
   max-width: 1880px;
   scroll-behavior: smooth;
   height: 500px;
-  background-size: cover;
-  background-position: center;
+
   color: white;
   position: relative;
   padding: 10px;
@@ -92,7 +91,6 @@ nav a:hover {
 
 .bookmark {
   position: relative;
-  scroll-behavior: smooth;
   bottom: 50px;
   left: 50%;
   z-index: 10;
@@ -103,39 +101,48 @@ nav a:hover {
 .bookmark ul {
   display: flex;
   position: relative;
-  scroll-behavior: smooth;
 }
 
 .bookmark li {
   list-style: none;
   color: white;
   padding: 2px;
-
-  scroll-behavior: smooth;
 }
 
 .bookmark li a {
   text-decoration: none;
   color: white;
-  scroll-behavior: smooth;
 }
 
 .img-scrolled {
   height: 500px;
   width: 7520px;
   display: flex;
-
   animation: slider 40s infinite ease-in-out;
 }
 
-@keyframes slider{
-  0%{ margin-left: 0px;}
-  14%{margin-left: -1880px;}
-  28%{margin-left: -3760px;}
-  42%{margin-left: -5640px;}
-  56%{margin-left: -3760px;}
-  98%{margin-left: -1880px;}
-  100%{margin-left: 0px;}
+@keyframes slider {
+  0% {
+    margin-left: 0px;
+  }
+  14% {
+    margin-left: -1880px;
+  }
+  28% {
+    margin-left: -3760px;
+  }
+  42% {
+    margin-left: -5640px;
+  }
+  56% {
+    margin-left: -3760px;
+  }
+  90% {
+    margin-left: -1880px;
+  }
+  100% {
+    margin-left: 0px;
+  }
 }
 
 .img-scrolled img {
